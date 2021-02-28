@@ -23,7 +23,6 @@ nav h1 {
     padding: 15px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
     
 
 }
@@ -38,6 +37,19 @@ nav h1 {
     padding: 10px;
 }
 
+.main-links ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(50, 45, 119);
+}
+
+.main-links ul li a:hover {
+    box-shadow:0 2px chartreuse;
+    transform: scale(2, 1);
+    
+}
+
 .big-picture {
     height: 250px;
     width: 100%;
@@ -48,42 +60,35 @@ nav h1 {
 }
 
 .big-picture div {
-    display: inline-block;
+    
+
+}
+
+.big-picture span {
+    background-color: transparent;
+    transform: rotate(10deg);
     float: right;
-    padding-top: 150px;
+    margin-top: 150px;
 }
 
 
 section {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-auto-rows: minmax(200px, auto);
-    padding-top: 35px;
+    padding: 50px 50px;
     
 }
 
 section h2 {
-    font-size: 50px;
+    font-size: 40px;
     justify-self: end;
     padding-right: 25px;
+    border-right: 0.25em dotted lightblue;
 
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
 
-}
-
-.grid-container div {
-    height: 100%;
-    width: 90%;
-    
-    justify-self: center;
-    padding: 5px 50px;
-    background-color: teal;
-}
 
 section div {
     background-color: transparent;
@@ -94,3 +99,57 @@ section div p {
     justify-self: center;
     padding: 5px 50px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px 50px;
+    gap: 25px;
+
+}
+
+
+.grid-container div {
+    height: 85px;
+    width: 100%;
+    justify-self: center;
+    opacity: 0.6;
+}
+
+.box1 h3, .box2 h3, .box3 h3, .box4 h3 {
+    width: 25%;
+    color:rgb(15, 15, 34);
+    background:seashell;
+    opacity: 1;
+}
+
+.grid-container div:hover {
+    opacity: 1;
+    box-shadow: 4px 5px darkcyan;
+}
+
+.box1 {
+    background-image: url(../assets/images/big-code.jpg);
+    
+}
+
+.box2 {
+    background-image: url(../assets/images/small-code.jpg);
+}
+
+.box3 {
+    background-image: url(../assets/images/red-code.jpg);
+}
+
+.box4 {
+    background-image: url(../assets/images/blue-code.jpg);
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    } 
+    
+}
+
