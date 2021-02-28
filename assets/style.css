@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #f1e9e9;
+}
+
+nav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+nav h1 {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 30px;
+    
+
+}
+
+.main-links {
+    padding: 15px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    
+
+}
+
+.main-links ul {
+    list-style-type: none;
+
+}
+
+.main-links ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.big-picture {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url("../assets/images/TH.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.big-picture div {
+    display: inline-block;
+    float: right;
+    padding-top: 150px;
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: minmax(200px, auto);
+    padding-top: 35px;
+    
+}
+
+section h2 {
+    font-size: 50px;
+    justify-self: end;
+    padding-right: 25px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+
+}
+
+.grid-container div {
+    height: 100%;
+    width: 90%;
+    
+    justify-self: center;
+    padding: 5px 50px;
+    background-color: teal;
+}
+
+section div {
+    background-color: transparent;
+    
+}
+
+section div p {
+    justify-self: center;
+    padding: 5px 50px;
+}
