@@ -5,6 +5,15 @@
     background-color: #f1e9e9;
 }
 
+body {
+    margin: 20px auto;
+    width: 80%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 20px;
@@ -13,14 +22,20 @@ nav {
 
 nav h1 {
     display: inline-block;
+    color:transparent;
+    padding-bottom: 15px;
+    text-shadow: 2px 0 rgb(255, 0, 0), 0 -2px rgb(255, 0, 0), -2px 0 rgb(0, 0, 255), 0 2px rgb(0, 0, 255);
     background-color: transparent;
-    font-size: 30px;
+    font-size: 40px;
     
 
 }
 
 .main-links {
-    padding: 15px;
+    border-radius: 15px;
+    
+    display: inline;
+    padding: 5px 15px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
@@ -41,7 +56,7 @@ nav h1 {
     text-decoration: none;
     font-size: 25px;
     font-weight: bolder;
-    color: rgb(50, 45, 119);
+    color: rgb(66, 66, 66);
 }
 
 .main-links ul li a:hover {
@@ -57,18 +72,19 @@ nav h1 {
     background-image: url("../assets/images/TH.jpg");
     background-size: cover;
     background-position: center;
+    z-index: -2;
 }
 
-.big-picture div {
-    
 
-}
 
 .big-picture span {
     background-color: transparent;
     transform: rotate(10deg);
     float: right;
+    font-family: cursive;
+    font-size: 2em;
     margin-top: 150px;
+    margin-right: 7em;
 }
 
 
@@ -100,6 +116,13 @@ section div p {
     padding: 5px 50px;
 }
 
+.contact span {
+    display: block;
+    justify-self: center;
+    padding: 5px 50px;
+    font-size: 2em;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -118,6 +141,7 @@ section div p {
 
 .box1 h3, .box2 h3, .box3 h3, .box4 h3 {
     width: 25%;
+    padding: 5px;
     color:rgb(15, 15, 34);
     background:seashell;
     opacity: 1;
@@ -126,6 +150,13 @@ section div p {
 .grid-container div:hover {
     opacity: 1;
     box-shadow: 4px 5px darkcyan;
+}
+
+.box0 {
+    background-image: url(../assets/images/big-code.jpg);
+    display: inline-block;
+    width: 50%;
+    
 }
 
 .box1 {
@@ -151,5 +182,21 @@ section div p {
         flex-direction: column;
     } 
     
+}
+
+@media screen and (max-width: 760px) {
+    .main-links ul li a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .main-links ul li a {
+        font-size: 10px;
+    }
+
+    .big-picture span {
+        font-size: 1em;
+    }
 }
 
