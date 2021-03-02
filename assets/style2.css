@@ -47,9 +47,7 @@ nav {
     font-size: 25px;
     font-weight: bolder;
     color: rgb(66, 66, 66);
-    z-index: 1;
 }
-
 
 .main-links a:hover {
     box-shadow:0 2px chartreuse;
@@ -60,81 +58,74 @@ nav {
     position: relative;
     height: 250px;
     width: 100%;
-    /* margin-bottom: 20px; */
     background-image: url("../assets/images/TH.jpg");
     background-size: cover;
     background-position: center;
     
 }
 
-
-
 .big-picture span {
     position: absolute;
     background-color: transparent;
     transform: rotate(10deg);
-    /* float: right; */
     right: 30px;
     top: 30px;
     font-family: cursive;
     font-size: 2em;
-    /* margin-top: 150px;
-    margin-right: 7em; */
 }
 
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-auto-rows: minmax(200px, auto);
+    display: block;
     padding: 50px 50px;
     
 }
 
-section h2 {
-    font-size: 40px;
-    justify-self: end;
-    padding-right: 25px;
-    border-right: 0.25em dotted lightblue;
-
+section div {
+    display: inline-block;
+    background-color: transparent;
+    width: 75%;
+    padding: 0 20px;
+    border-left: 0.25em dotted lightblue;
 }
 
-
-
-section div {
-    background-color: transparent;
+section h2 {
+    display: inline-block;
+    width: 20%;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 25px;
     
+
 }
 
 section div p {
-    justify-self: center;
+    float: right;
+    text-align: center;
     padding: 5px 50px;
+    
 }
 
-.contact span {
-    display: block;
+section div article {
+    height: 300px;
+    width: 100%;
     justify-self: center;
     padding: 5px 50px;
-    font-size: 2em;
+    opacity: 0.6;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 5px 50px;
+    
     gap: 25px;
+    
 
 }
 
-
-.grid-container div {
-    height: 85px;
-    width: 100%;
-    justify-self: center;
-    opacity: 0.6;
-}
-
-.grid-container img {
+.grid-container article {
+    position: relative;
+    float: right;
     height: 85px;
     width: 100%;
     justify-self: center;
@@ -142,23 +133,26 @@ section div p {
 }
 
 .box1 h3, .box2 h3, .box3 h3, .box4 h3 {
+    position: absolute;
     width: 25%;
-    padding: 5px;
+    padding: 5px 50px;
+    margin: 5px;
     color:rgb(15, 15, 34);
     background:seashell;
     opacity: 1;
 }
 
-.grid-container div:hover {
+.hovereffect:hover {
+
+}
+
+.grid-container article:hover {
     opacity: 1;
     box-shadow: 4px 5px darkcyan;
 }
 
 .box0 {
-    background-image: url(../assets/images/big-code.jpg);
-    display: inline-block;
-    width: 50%;
-    
+    margin-bottom: 25px;
 }
 
 .box1 {
@@ -178,7 +172,12 @@ section div p {
     background-image: url(../assets/images/blue-code.jpg);
 }
 
-
+.contact span {
+    display: block;
+    justify-self: center;
+    padding: 5px 50px;
+    font-size: 2em;
+}
 
 @media screen and (max-width: 1300px) {
     .grid-container {
@@ -205,4 +204,3 @@ section div p {
 
     
 }
-
