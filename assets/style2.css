@@ -1,3 +1,5 @@
+/* Broad page styles */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,6 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* styles for items in the navbar */
 nav {
     font-family: 'Trebuchet MS';
     padding: 20px;
@@ -50,15 +53,17 @@ nav {
 }
 
 .main-links a:hover {
-    box-shadow:0 2px chartreuse;
+    box-shadow:0 2px #FF80CF;
     
 }
+
+/* styles for the landing image */
 
 .big-picture {
     position: relative;
     height: 250px;
     width: 100%;
-    background-image: url("../assets/images/TH.jpg");
+    background-image: url("../assets/images/TH.jpg") ;
     background-size: cover;
     background-position: center;
     
@@ -72,21 +77,22 @@ nav {
     top: 30px;
     font-family: cursive;
     font-size: 2em;
+    color: #E8E761;
+    -webkit-text-stroke-width: thin;
 }
 
+/* styles for main content and sections. */
 
 section {
-    display: block;
     padding: 50px 50px;
     
 }
 
 section div {
     display: inline-block;
-    background-color: transparent;
     width: 75%;
-    padding: 0 20px;
-    border-left: 0.25em dotted lightblue;
+    padding: 10px 50px;
+    border-left: 0.5em dotted lightblue;
 }
 
 section h2 {
@@ -95,32 +101,25 @@ section h2 {
     font-size: 40px;
     text-align: right;
     padding-right: 25px;
-    
-
+    vertical-align: top;
+    color: black;
+    font-style: italic;
+    font-family: sans-serif;
 }
 
-section div p {
-    float: right;
-    text-align: center;
-    padding: 5px 50px;
-    
+.about-paragraph p { 
+    padding: 5px 0px;
+    font-size: 20px;
+    color: rgb(66, 66, 66);
+    text-indent: 50px;
 }
 
-section div article {
-    height: 300px;
-    width: 100%;
-    justify-self: center;
-    padding: 5px 50px;
-    opacity: 0.6;
-}
+/* styles for the work-example section. */
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
     gap: 25px;
-    
-
 }
 
 .grid-container article {
@@ -132,27 +131,36 @@ section div article {
     opacity: 0.6;
 }
 
-.box1 h3, .box2 h3, .box3 h3, .box4 h3 {
+.box0 h3 {
     position: absolute;
-    width: 25%;
+    left: 0px;
+    top: 15px;
+    white-space: nowrap;
     padding: 5px 50px;
-    margin: 5px;
     color:rgb(15, 15, 34);
     background:seashell;
-    opacity: 1;
 }
 
-.hovereffect:hover {
-
+.box1 h3, .box2 h3, .box3 h3, .box4 h3 {
+    position: absolute;
+    white-space: nowrap;
+    top: 15px;
+    left: 0px;
+    padding: 5px 50px;
+    color:rgb(15, 15, 34);
+    background:seashell;
+    
 }
 
-.grid-container article:hover {
-    opacity: 1;
-    box-shadow: 4px 5px darkcyan;
-}
+
+
 
 .box0 {
+    position: relative;
+    height: 300px;
+    opacity: 0.6;
     margin-bottom: 25px;
+    background-image: url(../assets/images/big-code.jpg);
 }
 
 .box1 {
@@ -172,18 +180,65 @@ section div article {
     background-image: url(../assets/images/blue-code.jpg);
 }
 
-.contact span {
-    display: block;
-    justify-self: center;
-    padding: 5px 50px;
-    font-size: 2em;
+.hovereffect:hover {
+    opacity: 1;
+    box-shadow: 4px 5px darkcyan;
 }
 
-@media screen and (max-width: 1300px) {
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact div{
+    border: none;
+    padding: 10px 0px;
+    display:flex
+}
+
+
+.contact img {
+    height: 25px;
+    width: 25x;
+}
+
+.contact span {
+    align-self: center;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #b9b5b5;
+    height: 15px;
+}
+
+footer a, footer span {
+    font-size: 8px;
+    padding: 0 5px;
+}
+
+footer h6 {
+    padding-right: 5px;
+}
+
+
+
+
+
+/* media queries setting breakpoints for a responsive webpage. */
+
+@media screen and (max-width: 1100px) {
     .grid-container {
         display: flex;
         flex-direction: column;
     } 
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
     
 }
 
@@ -203,4 +258,13 @@ section div article {
     }
 
     
+}
+
+@media screen and (max-width: 1000px) {
+    section div, section p {
+        display: block;
+    }
+    .about-paragraph p {
+        font-size: 18px;
+    }
 }
