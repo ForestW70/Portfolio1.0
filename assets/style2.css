@@ -23,6 +23,7 @@ nav {
     background-color: aquamarine;
 }
 
+/* set text shadow to have two colors make up its borders  */
 .name-header {
     display: inline-block;
     color: transparent;
@@ -207,6 +208,12 @@ section h2 {
     font-size: 12px;
     padding-left: 10px;
 }
+
+.burner {
+    text-decoration: none;
+    text-shadow: .25em .25em #FF80CF;
+}
+
 
 footer {
     display: flex;
