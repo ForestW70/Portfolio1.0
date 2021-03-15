@@ -36,7 +36,7 @@ nav {
 
 .main-links {
     border-radius: 15px;
-    display: inline;
+    display: inline-block;
     padding: 5px 15px;
     float: right;
     font-family: 'Gill Sans';
@@ -45,9 +45,15 @@ nav {
 
 .main-links a {
     display: inline-block;
+    font-family: sans-serif;
     padding: 0 10px;
     margin: 5px 0;
     text-decoration: none;
+    -webkit-text-emphasis: open sesame #8da880;
+    -webkit-text-emphasis-position: under;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: lavenderblush;
+
     font-size: 25px;
     font-weight: bolder;
     color: rgb(66, 66, 66);
@@ -61,9 +67,10 @@ nav {
 /* styles for the landing image */
 
 .big-picture {
+    display: block;
     position: relative;
     height: 250px;
-    width: 100%;
+    
     background-image: url("../assets/images/TH.jpg") ;
     background-size: cover;
     background-position: center;
@@ -249,6 +256,20 @@ footer h6 {
     
 }
 
+@media screen and (max-width: 1000px) {
+    .big-picture {
+        height: 0;
+    }
+
+@media screen and (max-width: 1000px) {
+    section div, section p {
+        display: block;
+    }
+    .about-paragraph p {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 760px) {
     .main-links a {
         font-size: 15px;
@@ -267,11 +288,3 @@ footer h6 {
     
 }
 
-@media screen and (max-width: 1000px) {
-    section div, section p {
-        display: block;
-    }
-    .about-paragraph p {
-        font-size: 18px;
-    }
-}
