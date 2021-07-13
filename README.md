@@ -25,7 +25,7 @@ Maybe one day I will be less fearful of cameras and have a headshot here as well
 
 ## Relevant link
 
-![repo](https://github.com/ForestW70/hw2portfolio)
-![live site](https://forestw70.github.io/hw2portfolio/)
+[repo](https://github.com/ForestW70/hw2portfolio)
+[live site](https://forestw70.github.io/hw2portfolio/)
 
 
