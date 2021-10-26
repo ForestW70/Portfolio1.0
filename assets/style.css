@@ -1,4 +1,4 @@
-.externalPage {
+/* .externalPage {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,4 +10,33 @@
     color: black;
     font-style: italic;
     font-family: sans-serif;
+} */
+
+.box {
+    background-color: blanchedalmond;
+    height: 200px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    padding:0;
+    position: static;
+}
+
+
+
+.text {
+    transform: scale(1.2, 1);
+    color: coral;
+    letter-spacing: 1px;
+    font-size: 78px;
+    line-height: 0.5;
+    font-family: 'Xanh Mono', monospace;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px chocolate;
+    /* text-align:center; */
+}
+
+.ok {
+    position: static;
 }
