@@ -68,5 +68,5 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
   - ![bottom of the page](./assets/images/application-bottom.png)
 
 * Links:
-  - [Repo page](https://github.com/ForestW70/hw2portfolio)
-  - [Deployed page](https://forestw70.github.io/hw2portfolio/)
+  - [Repo page](https://github.com/ForestW70/Portfolio1.0)
+  - [Deployed page](https://forestw70.github.io/Portfolio1.0/)
